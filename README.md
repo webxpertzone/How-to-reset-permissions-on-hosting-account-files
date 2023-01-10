@@ -1,0 +1,1 @@
+# How-to-reset-permissions-on-hosting-account-files
