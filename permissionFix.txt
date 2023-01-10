@@ -1,0 +1,10 @@
+Here is howHere is how I usually correct all permissions for a site (as root).
+
+(You may need to ask the server administrator to do this for you if your Reseller shell access doesn't have enough privileges)
+Code:
+
+find /home/<cpuser>/public_html/ -type f -exec chmod 644 {} \;
+
+find /home/<cpuser>/public_html/* -type d -exec chmod 755 {} \;
+
+Replace <cpuser> with the actual account username. If your Add-On domain is being served from another folder, or from outside of /public_html, you should modify the folder paths as necessary.
